@@ -7,17 +7,27 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    """
+    index function
+    """
     return render_template("index.html")
 
 
 @app.route("/about")
 def about():
+    """
+    about function
+    """
     return render_template("about.html")
 
 
 @app.route("/contact")
-def about():
+def contact():
+    """
+    contact function
+    """
     return render_template("contact.html")    
+
 
 if __name__ == "__main__":
     app.run(
